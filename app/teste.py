@@ -21,3 +21,7 @@ texto = pytesseract.image_to_string(imagem, lang="por",config=custom_oem_psm_con
 
 print(texto)
 
+#Identificando Cores antes de aplicar o filtro de gray.
+#O Filtro é melhor aplicado para versos de cartões que estão na cor amarelo.
+# https://acervolima.com/identificacao-de-cores-em-imagens-usando-python-opencv/
+# Site mostrando como identificar cores.

@@ -25,3 +25,7 @@ print(texto)
 #O Filtro é melhor aplicado para versos de cartões que estão na cor amarelo.
 # https://acervolima.com/identificacao-de-cores-em-imagens-usando-python-opencv/
 # Site mostrando como identificar cores.
+## Limiarização de imagens, pode ser feito aqui.
+# https://www.youtube.com/watch?v=1lkOTltVsQ8&list=PLZ3V9XyVA52_rzo8EeR07To8tvLk7JXlS&index=25
+# limiarizacao simples ou automatica.
+# Automatica = metodo de Otsu

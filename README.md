@@ -14,3 +14,8 @@ Descrição de cada função
 * GetInfo.SearchUnidades
 
 Essa Função retorna a unidade a quantidade mais provável do cartão, caso encontre algum erro, retornará um array com as unidades mais prováveis.
+No caso de não conseguir encontrar o número de unidades do Cartão, será retornado o valor de 20 Unidades, já que seria o mais provável, foi feito também o tratamento de strip para a string.
+
+* getText.GetTextFromImageBest
+
+Essa função retorna o melhor resultado para a extração de texto do cartão, porém não é a melhor versão para a extração de unidades, para a extração das unidades o melhor método é utilizando a imagem em tons de cinza.

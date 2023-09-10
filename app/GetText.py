@@ -23,7 +23,7 @@ def GetTextFromImage(image_file):
     #print(pytesseract.get_languages(config=''))
     #print(texto)
 
-    print(texto)
+    #print(texto)
 
     #Identificando Cores antes de aplicar o filtro de gray.
     #O Filtro é melhor aplicado para versos de cartões que estão na cor amarelo.
@@ -34,9 +34,20 @@ def GetTextFromImage(image_file):
     # limiarizacao simples ou automatica.
     # Automatica = metodo de Otsu
 
-    unidades=g.SearchUnidades(texto)
-    print(unidades)
+    #unidades=g.SearchUnidades(texto)
+    #print(unidades)
 
-    data={'unidades':unidades}
+    #data={'unidades':unidades}
     #print(data)
-    return(data)
+    #return(data)
+    return(texto)
+
+def GetTextFromImageBest(image_file):
+    #IMAGE="01-V-V.jpg"
+    imagem = cv2.imread(PATH_IMAGE+image_file)
+    imagem2=cv2.cvtColor(imagem,cv2.COLOR_BGR2GRAY)
+    custom_oem_psm_config = r'--oem 3 --psm 6'
+    pytesseract.pytesseract.tesseract_cmd = '/opt/homebrew/bin/tesseract'
+
+    texto = pytesseract.image_to_string(imagem2, lang="por",config=custom_oem_psm_config) #
+    return(texto)

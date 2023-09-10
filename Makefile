@@ -5,16 +5,13 @@ teste:
 	@source virtual/bin/activate ; virtual/bin/python app/teste_geral.py $(file)
 
 teste-verso:
-	@echo "testando"
+	@clear
+	@echo "Rodando bateria de testes"
 	@source virtual/bin/activate ; virtual/bin/python app/teste_geral.py 04-V.jpeg
 	@source virtual/bin/activate ; virtual/bin/python app/teste_geral.py 03-V.jpeg
 	@source virtual/bin/activate ; virtual/bin/python app/teste_geral.py 02-V.jpeg
 	@source virtual/bin/activate ; virtual/bin/python app/teste_geral.py 01-V.jpeg
 	@source virtual/bin/activate ; virtual/bin/python app/teste_geral.py photo_5118776271898258939_y.jpg
-
-
-
-
 
 install: 
 	rm -rf virtual;

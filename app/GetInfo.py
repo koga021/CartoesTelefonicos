@@ -7,7 +7,7 @@ from iteration_utilities import duplicates
 def SearchUnidades (texto):
     #print("Print por dentro da variavel")
     #print(texto)
-    t=re.compile(r' [0-9][0-9] | [0-9][0-9][0-9] ')
+    t=re.compile(r' [0-9][0-9] ')
     #check=t.findall(texto)
     correspondencias = t.finditer(texto)
     result=[]

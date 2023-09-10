@@ -1,11 +1,14 @@
 
 import pytesseract
 import cv2
+import GetInfo as g
 
 PATH_IMAGE="images/"
-IMAGE="02-V.jpeg"
+#IMAGE="02-V.jpeg"
 #IMAGE="01-V.jpeg"
 #IMAGE="01-V-T.jpg"
+IMAGE="04-V.jpeg"
+
 
 #IMAGE="01-V-V.jpg"
 imagem = cv2.imread(PATH_IMAGE+IMAGE)
@@ -30,3 +33,9 @@ print(texto)
 # https://www.youtube.com/watch?v=1lkOTltVsQ8&list=PLZ3V9XyVA52_rzo8EeR07To8tvLk7JXlS&index=25
 # limiarizacao simples ou automatica.
 # Automatica = metodo de Otsu
+
+unidades=g.SearchUnidades(texto)
+print(unidades)
+
+data={'unidades':unidades}
+print(data)

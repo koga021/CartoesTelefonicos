@@ -9,4 +9,6 @@ install:
 	
 run:
 	clear;
-	@source virtual/bin/activate ; virtual/bin/python app/teste.py
+	#@source virtual/bin/activate ; virtual/bin/python app/detecta_cor.py
+	#@source virtual/bin/activate ; virtual/bin/python app/teste.py
+	@source virtual/bin/activate ; virtual/bin/python app/extract.py
